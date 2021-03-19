@@ -1,0 +1,63 @@
+extends layout
+
+block content
+    
+    .container.landing-content(style='min-height: 20em; margin-bottom: 2em;')
+      img(src='../images/drawing_good.jpg' width='20%' alt='')
+      br
+      h3
+        br
+        p.ourclassesText
+          | Simone's Art Academy offers art classes in painting; oil, acrylic, watercolour, and water-based media, drawing,
+          | printmaking, mixed media, collage, and more. They range from introductory to more contemporary.
+          | Our instructor is experienced artist-teacher who holds degree in visual art and is passionate about art
+          | education.
+        br
+        img(src='../images/drawing_good-2.jpg' width='40%' alt='')
+        br
+        p.ourclassesText
+          | The curriculum accommodates students from every skill level, whether they’re an absolute beginner or a more
+          | advanced student. We encourage skill development, cultivate art appreciation. Students will strengthen their
+          | ability to perceive and translate the visual world into their own artistic expression. Technical skills are
+          | strengthened through methods such as direct observation, perspective drawing, working from the model, and
+          | experimental mark-making and material use.
+        br
+        br
+        p.ourclassesText
+          | children will be divided into age-appropriate groups to be determined upon registration. (Gr 1-3, Gr 4-6, Gr
+          | 7-9, Gr 10-12). Each group is 3-4 
+          br
+          |         For time being, weekly lessons will be delivered via the video conferencing app, Zoom. Participants must use a
+          |         device with a camera and microphone enabled.
+        br
+        img(src='../images/drawing.png' width='20%' alt='')
+        br
+        br
+        p.ourclassesText.btn-dark
+          | Monthly fee is $60 (4 classes a month, class duration is 1 hour). Extra $30
+          | deposit will be paid upon registration for the make-up class and will be refunded or moved to the next month
+          | when you don’t use it
+        br
+        br
+        p.ourclassesText.btn-warning
+          | Make-up sessions must be scheduled due to child’s absence before his/her
+          | upcoming session. The child must practice the missed class under the instructor’s observation to get an
+          | immediate correction with live discussion and explanation of the corrections.
+        br
+        br
+        p.ourclassesText
+          | You are most welcome to register at any time of the year, your child will be on the
+          | waiting list until a group of 3-4 is completed. No one will be able to join any group that started already
+          | earlier before your registration.
+        br
+        br
+        p.ourclassesText
+          | Art supplies for each class should be purchased, and prepared next to the student
+          | before starting time. Parents will be informed by the teacher with the supplies needed before each class.
+          | (unprepared students with their supplies slow down the class).
+        img(src='../images/too_great.jpg' width='70%' alt='')
+      form.container.form-login(action='./Enroll' method='GET')
+        .container
+          button.btn.btn-danger.main-Enroll  Enroll Now! 
+    div(style='min-height: 6em;')  
+

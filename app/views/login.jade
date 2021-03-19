@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container.login-formContainer
+    h1.slogan
+      | Welcome To Simone's Art Academy
+    br
+    h3(style='color:red;') #{wrong} 
+      br
+      a(href='./enroll') #{erollNow}
+    form.container.form-login(action='./login' method='post')
+      .container.credentials
+        input.login-input(type='email' name='email' id='' placeholder='Enter your email' required='')
+        br
+        input.login-input(type='password' name='pass' placeholder='Enter your password' id='' required='')
+        br
+        button.btn.btn-info.login-input-btn Login
+        br
+        a(href='./sendPassword') Forgot your password?
+  div(style='min-height: 6em;')

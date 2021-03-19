@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h2(style='color: red;').slogan #{messageToRegister}
+  .container.landing-content(style='min-height: 20em; margin-bottom: 2em;')
+    h2
+      | Step 1 
+      br
+      |  Please fill the belwo form:
+    br
+    form.container.form-login(action='./enroll' method='post')
+      .container.credentials
+        br
+        input.login-input(required='' type='email' name='email' id='' placeholder='Enter your email')       
+        br
+        input.login-input(required='' type='password' name='pass' placeholder='Enter your password' id='')
+        br
+        input.login-input(required='' type='text' name='cell' placeholder='Cell' id='')
+        br
+        .form-check
+          label.form-check-label(for='flexCheckDefault')
+            input#flexCheckDefault(type='checkbox' value='' onchange="isChecked(this, 'sub1')")
+            |  I agree to receive essential correspondence like:  confirmation email, teacher feedback, student absences and makeup class alert
+        button#sub1.btn.btn-info.login-input-btn(type='submit' disabled='disabled')  Submit
+        br
+  div(style='min-height: 6em;')  
+ 
+   

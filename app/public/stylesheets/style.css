@@ -1,0 +1,153 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+.nav-link {
+    font-size: 1.3em;
+    font-family: 'Sriracha', cursive;
+}
+
+.navs{
+    font-size: 2em;
+    font-family: 'Sriracha', cursive;
+}
+.banner-container{
+    display: flex;
+    justify-content:center;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .landing-content , p , h3{
+        margin: 0;
+        padding: 0;
+    }
+    .banner{
+        width:100%;
+        display: flex;
+    }
+    .slogan{
+      
+        margin-top: 1em;
+    
+        margin-top: 0.5em;
+        
+    }
+
+  }
+  @media only screen and (max-width: 400) {
+    .slogan{
+      
+        margin-top: 0.5em;
+        font-size: .6em;
+    }
+    h1,h2,h3{
+      font-size: 0.2em;
+    }
+
+  }
+  @media only screen and (min-width: 769px) {
+    .banner{
+        width:50%;
+        display: flex;
+        margin-top: 1.3em;
+    }
+    th{
+        font-size:small
+    }
+    .slogan{
+      
+        margin-top: .8em;
+    }
+    .ourclassesText{
+        max-width: 70%;margin:auto;
+       
+        
+      }
+
+
+  }
+.slogan{
+    font-family: 'Carter One';
+    text-align: center;
+    color: #6d6c6c;
+}
+
+  .landing-content,.login-formContainer,.landing-content-{
+  border-radius: 1em;
+  padding: 10px;
+  width: 10em;
+  margin: 2em;
+  flex-shrink: 3; 
+  box-shadow: 1px 1px 16px 1px rgb(181, 198, 253) ; 
+  background-color: rgb(255, 255, 255); 
+  align-items: center;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  padding-bottom: 4em;
+  padding-top: 1em;
+  }
+  .landing-hr{
+    border: solid rgb(13, 202, 240) 2px;
+    box-shadow: 1px 1px 10px 10px rgb(13, 202, 240,.4) ; 
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 50%;
+   
+    margin-left: 25%;
+  }
+  .login-input {
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    padding: 10px;
+    width: 100%;
+    max-width: 20em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex-shrink: 3; 
+    
+    background-color:#ffd0fe; 
+  }
+  .main-Enroll{
+    font-family: 'Sriracha', cursive;
+    max-width: 15em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+.mian-slogan{
+  font-family: 'Sriracha', cursive;}
+
+.ourclassesText{  
+ 
+     text-align: justify;
+     text-justify: inter-word;
+  }
+
+
+
+  .login-input-btn{
+    border-radius: 2em; 
+    width: auto;
+    padding: 10px;
+    max-width: 20em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex-shrink: 3; 
+    box-shadow: 1px 1px 16px 1px rgb(163, 230, 247) ; 
+  }
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(40, 153, 187);
+    color: white;
+    text-align: center;
+  }

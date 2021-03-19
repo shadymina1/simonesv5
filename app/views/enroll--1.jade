@@ -1,0 +1,54 @@
+
+extends layout
+
+block content
+  h2(style='color: red;').slogan #{messageToRegister}
+  
+  .container.landing-content(style='min-height: 20em; margin-bottom: 2em;')
+    h2
+      | Sudent #1 info :
+      br
+      |  Please fill the belwo form:
+    br
+    form.container.form-login(action='./enroll1' method='post')
+      .container.credentials
+        label(for='pass') Student first name:
+        br
+        input.login-input(required='' type='text' name='fName' placeholder='Enter Student First Name' id='')
+        br
+        label(for='pass') Student last name:
+        br
+        input.login-input(required='' type='text' name='lName' placeholder='Enter Student Last Name' id='')
+        br
+        label(for='grades') Choose grade:
+        
+        select#browsers.login-input(name='grade')
+          option.login-input(value='a') Grade 1 to 3
+          option.login-input(value='b') Grade 4 to 6
+          option.login-input(value='c') Grade 7 to 9
+        br
+        .form-check
+          label.form-check-label(for='flexCheckDefault')
+            input#flexCheckDefault(type='checkbox' value='' onchange="isChecked(this, 'sub1')")
+            |  I agree to receive essential correspondence like:  confirmation email, teacher feedback, student absences and makeup class alert
+        button#sub1.btn.btn-info.login-input-btn(type='submit' disabled='disabled')  Submit
+        br
+  div(style='min-height: 6em;')  
+ 
+   
+
+
+
+
+
+
+
+ label(for='pass') Student first name:
+        br
+        input.login-input(required='' type='text' name='fName' placeholder='Enter Student First Name' id='')
+        br
+        label(for='pass') Student last name:
+        br
+        input.login-input(required='' type='text' name='lName' placeholder='Enter Student Last Name' id='')
+        br
+        label(for='grades') Choose grade:

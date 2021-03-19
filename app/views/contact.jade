@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+      
+      .container.landing-content(style='min-height: 20em; margin-bottom: 2em;')
+        h2 #{errorMessage}
+        h2 #{successMessage}
+        img(src='../images/hand.png' width='20%' style='margin-bottom: 2em;' alt='')
+        h3 We would like to here from you
+        form.container.form-login(action='./contact' method='post')
+          input.login-input(style='width: 100%;' type='text' name='fName' placeholder='First Name ')
+          br
+          input.login-input(style='width: 100%;' type='text' name='lName' placeholder='Last Name ')
+          br
+          input.login-input(style='width: 100%;' type='text' name='email' placeholder='emial ')
+          br
+          input.login-input(style='width: 100%;' type='text' name='subject' placeholder='Subject ')
+          br
+          textarea.login-input(style='height: 20em;width: 100%;' name='message' type='text' placeholder='Message: ')
+          br
+          button.btn.btn-info.login-input-btn Send 
+    div(style='min-height: 6em;')  

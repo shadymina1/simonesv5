@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    .container.landing-content-(style='min-height: 20em; margin-bottom: 2em;')
+      div(style='')
+        div(style='max-width: 30em; margin: auto;')
+          img(src='../images/artist.png' width='90%' alt='')
+        div(style='align-items: center;')
+          h1.container.mian-slogan
+            | It is time to release your dreams, unlimit your creative ideas and
+            | make your artwork looks professional with the greatest academic techniques.
+          br
+      br
+      form.container.form-login(action='./Enroll' method='post')
+        .container
+          if (is_session)
+            a(href='/profileStudent').btn.btn-danger.main-Enroll  Profile
+          else 
+            button.btn.btn-danger.main-Enroll  Enroll Now! 
+          br
+    div(style='min-height: 6em;')
+  

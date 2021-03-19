@@ -1,0 +1,303 @@
+extends layout
+
+block content
+    .container.landing-content-(style='min-height: 20em; margin-bottom: 2em;')
+      h1.container.mian-slogan
+        | Hello #{fName} ! 
+        br
+        |  Here is your info!
+      br
+      h5 First name: 
+        span(style='color:red') #{fName}
+      br
+      h5 Last name:  
+        span(style='color:red') #{lName}
+      br
+      h5 Your grade range: 
+        span(style='color:red')  #{grade}
+      br
+      h5(style='color:red') The academy didn't assign your class time yet,
+      h5(style='color:red') so you still can change your availabelty
+      h5(style='color:red') or any of your info by clicking the button "Change" bellow.
+      br
+
+      table.table
+            thead
+              tr
+                th(style='padding: 0;' scope='col') PM
+                th(style='padding: 0;background:#FFF4C0;' scope='col') Sun
+                th(style='padding: 0;' scope='col') Mon
+                th(style='padding: 0;background:#FFF4C0;' scope='col') Tue
+                th(style='padding: 0;' scope='col') Wed
+                th(style='padding: 0;background:#FFF4C0;' scope='col') Thu
+                th(style='padding: 0;' scope='col') Fri
+                th(style='padding: 0;background:#FFF4C0;' scope='col') Sat
+            tbody
+              tr
+                th(style='padding: 0;' scope='row') 3:00-4:00
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;background:#FFF4C0;')
+                    if sun3>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sun3' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsun3' )
+                td
+                  div(style='padding: 0;')
+                    if mon3>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='mon3' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zmon3' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if tue3>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='tue3' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='ztue3' )
+                td
+                  div(style='padding: 0;')
+                    if wed3>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='wed3' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zwed3' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if thu3>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='thu3' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zthu3' )
+                td
+                  div(style='padding: 0;')
+                    if fri3>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='fri3' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zfri3' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sat3>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sat3' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsat3' )
+              tr
+                th(style='padding: 0;' scope='row') 4:00-5:00
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sun4>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sun4' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsun4' )
+                td
+                  div(style='padding: 0;')
+                    if mon4>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='mon4' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zmon4' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if tue4>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='tue4' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='ztue4' )
+                td
+                  div(style='padding: 0;')
+                    if wed4>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='wed4' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zwed4' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if thu4>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='thu4' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zthu4' )
+                td
+                  div(style='padding: 0;')
+                    if fri4>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='fri4' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zfri4' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sat4>0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sat4' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsat4' )
+              tr
+                th(style='padding: 0;' scope='row') 5:00-6:00
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sun5 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sun5' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsun5' )
+                td
+                  div(style='padding: 0;')
+                    if mon5 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='mon5' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zmon5' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if tue5 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='tue5' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='ztue5' )
+                td
+                  div(style='padding: 0;')
+                    if wed5 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='wed5' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zwed5' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if thu5 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='thu5' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zthu5' )
+                td
+                  div(style='padding: 0;')
+                    if fri5 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='fri5' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zfri5' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sat5 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sat5' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsat5' )
+              tr
+                th(style='padding: 0;' scope='row') 6:00-7:00
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sun6 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sun6' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsun6' )
+                td
+                  div(style='padding: 0;')
+                    if mon6 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='mon6' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zmon6' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if tue6 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='tue6' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='ztue6' )
+                td
+                  div(style='padding: 0;')
+                    if wed6 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='wed6' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zwed6' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if thu6 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='thu6' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zthu6' )
+                td
+                  div(style='padding: 0;')
+                    if fri6 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='fri6' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zfri6' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sat6 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sat6' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsat6' )
+              tr
+                th(style='padding: 0;' scope='row') 7:00-8:00
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sun7 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sun7' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsun7' )
+                td
+                  div(style='padding: 0;')
+                    if mon7 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='mon7' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zmon7' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if tue7 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='tue7' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='ztue7' )
+                td
+                  div(style='padding: 0;')
+                    if wed7 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='wed7' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zwed7' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if thu7 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='thu7' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zthu7' )
+                td
+                  div(style='padding: 0;')
+                    if fri7 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='fri7' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zfri7' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sat7 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sat7' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsat7' )
+              tr
+                th(style='padding: 0;' scope='row') 8:00-9:00
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sun8 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sun8' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsun8' )
+                td
+                  div(style='padding: 0;')
+                    if mon8 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='mon8' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zmon8' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if tue8 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='tue8' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='ztue8' )
+                td
+                  div(style='padding: 0;')
+                    if wed8 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='wed8' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zwed8' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if thu8 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='thu8' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zthu8' )
+                td
+                  div(style='padding: 0;')
+                    if fri8 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='fri8' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zfri8' )
+                td(style='background:#FFF4C0;')
+                  div(style='padding: 0;')
+                    if sat8 >0
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='sat8' checked)
+                    else 
+                      input#flexCheckChecked.form-check-input.chk( type='checkbox' disabled='' name='zsat8' )
+      a(href='/changingData').btn.btn-danger.login-input-btn Change 
+    div(style='min-height: 6em;')  
+
+

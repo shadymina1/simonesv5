@@ -1,0 +1,32 @@
+extends layout
+
+block content
+      
+      .container.landing-content(style='min-height: 20em; margin-bottom: 2em;')
+        .container
+          form(action='./enrolled')
+            h3 Billing Address
+            input#fName.login-input(required='' type='text' name='firstname' placeholder=' Full Name')
+            br
+            input#adr.login-input(required='' type='text' name='address' placeholder='Address')
+            br
+            input#city.login-input(required='' type='text' name='city' placeholder='City')
+            br
+            input#state.login-input(required='' type='text' name='state' placeholder='Province')
+            br
+            input#zip.login-input(required='' type='text' name='postal' placeholder='Postal-code')
+            br
+            h3 Payment
+            input#cname.login-input(required='' type='text' name='cardname' placeholder='Name on Card')
+            br
+            input#ccnum.login-input(required='' type='text' name='cardnumber' placeholder='Card Number')
+            br
+            input#expmonth.login-input(required='' type='text' name='expmonth' placeholder='Exp Month')
+            br
+            input#expyear.login-input(required='' type='text' name='expyear' placeholder='Exp Year')
+            br
+            input#cvv.login-input(required='' type='text' name='cvv' placeholder='CVV')
+            br
+            button.btn.btn-info.login-input-btn Submit 
+            br
+      div(style='min-height: 6em;')  
